@@ -1,8 +1,9 @@
 export class Book {
-    constructor(authorName, publicationYear, numbersOfPages, bookAvailabilityStatus) {
+    constructor(bookName, authorName, publicationYear, numbersOfPages) {
+        this.bookName = bookName
         this.authorName = authorName
         this.publicationYear = publicationYear
         this.numbersOfPages = numbersOfPages
-        this.bookAvailabilityStatus = bookAvailabilityStatus
+        this.bookAvailabilityStatus = 'available'
     }
 }
